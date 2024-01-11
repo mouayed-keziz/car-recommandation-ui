@@ -1,3 +1,4 @@
+"use client"
 import { Copy } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -20,15 +21,17 @@ export default function CarModal({ car }: Car) {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <CarCard
-                    key={car.id}
-                    car={{
-                        id: car.id,
-                        name: car.name,
-                        image: car.image,
-                        price: car.price
-                    }}
-                />
+                <button>
+                    <CarCard
+                        key={car.id}
+                        car={{
+                            id: car.id,
+                            name: car.name,
+                            image: car.image,
+                            price: car.price
+                        }}
+                    /></button>
+                {/* <Button variant="outline">Edit Profile</Button> */}
             </DialogTrigger>
             <DialogContent className="sm:max-w-md">
                 <DialogHeader>

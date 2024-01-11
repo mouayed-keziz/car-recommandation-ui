@@ -1,3 +1,5 @@
+"use client"
+
 import { Skeleton } from "@/components/ui/skeleton"
 import CarModal from "./car-modal";
 import CarCard from "./card";
