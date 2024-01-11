@@ -53,7 +53,7 @@ export default function CarModal({ car }: Car) {
                 <p className="text-md"><span className="font-bold">couleur : </span>couleur</p>
                 <DialogFooter className="sm:justify-end">
                     <DialogClose asChild>
-                        <Button type="button" variant="secondary">
+                        <Button type="button">
                             Close
                         </Button>
                     </DialogClose>
